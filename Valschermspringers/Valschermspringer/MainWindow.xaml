@@ -1,0 +1,29 @@
+﻿<Window x:Class="Valschermspringer.MainWindow" Background="LightSkyBlue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Valschermspringer"
+             mc:Ignorable="d"
+
+        xmlns:h="http://helix-toolkit.org/wpf"
+        xmlns:h1="http://schemas.microsoft.com/netfx/2007/xaml/presentation"
+        Title="Valschermspringer" Height="959.744" Width="1000" KeyUp="KeyUpEvent" >
+    <Grid  x:Name="test" >
+        <Button Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Height="35" Panel.ZIndex="100" Margin="16,180,0,0" Click="AddSkydiver_Click"/>
+        <TextBox x:Name="TxtHeight" HorizontalAlignment="Left" Height="23" Margin="58,30,0,0" TextWrapping="Wrap" Text="" Panel.ZIndex="100" VerticalAlignment="Top" Width="120"/>
+
+        <h:HelixViewport3D x:Name="hVp3" KeyUp="KeyUpEvent" Panel.ZIndex="1" Margin="0,-4,-0.208,3.816">
+            <h:LightVisual3D/>
+        </h:HelixViewport3D>
+        <Label Content="Aantal" HorizontalAlignment="Left" Margin="8,63,0,0" VerticalAlignment="Top"  Panel.ZIndex="100" />
+        <Label Content="Height" HorizontalAlignment="Left" Margin="8,26,0,0" VerticalAlignment="Top"  Panel.ZIndex="100" />
+        <TextBox x:Name="TxtGewicht" HorizontalAlignment="Left" Height="23" Margin="58,99,0,0" TextWrapping="Wrap" Text="" Panel.ZIndex="100" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Gewicht" HorizontalAlignment="Left" Margin="7,96,0,0" VerticalAlignment="Top"  Panel.ZIndex="100" />
+        <TextBox x:Name="TxtWind" HorizontalAlignment="Left" Height="23" Margin="58,134,0,0" TextWrapping="Wrap" Text="" Panel.ZIndex="100" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Wind" HorizontalAlignment="Left" Margin="11,134,0,0" VerticalAlignment="Top"  Panel.ZIndex="100" />
+        <TextBox x:Name="TxtAdd" HorizontalAlignment="Left" Height="23" Margin="57,65,0,0" TextWrapping="Wrap" Text="" Panel.ZIndex="100" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+
+</Window>
